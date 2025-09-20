@@ -1,0 +1,2 @@
+the command is 
+npx cowsay "Node!"

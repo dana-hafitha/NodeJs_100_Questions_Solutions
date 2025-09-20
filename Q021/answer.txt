@@ -1,0 +1,17 @@
+Q => Explain difference between ^1.2.3 and ~1.2.3 in package.json 
+with one example. 
+
+A => 
+for example i want the versions of a library (PKG "imaginary library name");
+if i type PKG:~1.2.3 that means that i have all the vesrions that contain the patch of 3 or above 
+means it can be 1.2.3 version or 1.2.4 or any other number bigger than 3 in the patch place
+
+but for ^1.2.3
+PKG: ^1.2.3 means that i can have all the versions of 1.2.0 and higher 
+it can be 1.2.2 or 1.3.4 it affect the second number which and tells that anything bigger than the 
+second number is accepted and any compination of the second and the third number is also accepted
+means i can only change the minor and the patch version but the minor has to be bigger of what i have 
+right now ,means it has to be bigger than 2 in our example
+
+PKG:~1.2.3 // 1.2.3 , 1.2.4 .1.2.5 
+PKG:^1.2.3 //1.2.3, 1.2.4, 1.3.1, 1.3.5 
