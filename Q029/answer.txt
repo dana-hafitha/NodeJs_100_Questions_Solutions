@@ -1,0 +1,3 @@
+in order to enter REPL we use the command "node" in our teminal
+to get the process.version we simply write "process.version" and then press Enter 
+in order to exit the REPL we use (Ctrl+C or Ctrl+D or type .exit)
