@@ -1,0 +1,3 @@
+in packege.json in the scrots part we add these 2 lines
+"scripts.start": "node server.js",
+"scripts.dev": "node --watch server.js"
