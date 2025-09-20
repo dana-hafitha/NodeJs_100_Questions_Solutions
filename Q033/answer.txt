@@ -1,0 +1,4 @@
+//Promise.race()
+// it return the first promise to be done wither it resolves or rejects
+//Promise.allSettled()
+// it return the value of both promises together.
