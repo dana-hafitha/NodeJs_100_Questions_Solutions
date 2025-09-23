@@ -5,7 +5,7 @@ const bodyParser = require("body-parser");
 const app = express();
 app.use(bodyParser.json());
 
-const SECRET_KEY = "your_secret_key";
+const SECRET_KEY = "secret_key";
 
 app.post("/login", (req, res) => {
   const { username, password } = req.body;
