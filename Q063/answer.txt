@@ -1,0 +1,5 @@
+CSRF tricks a logged-in user’s browser into sending unwanted requests to a site using their cookie-based session.
+because the browser automatically includes cookies in the session, the attacker can perform actions as the user without their consent or them knowing.
+like changing passwords or making transactions.
+One solution in Express is using the csurf middleware, which adds a secret code to forms and verifies it when submitted.
+Only requests with the correct code are accepted, which prevent forged cross-site requests.
