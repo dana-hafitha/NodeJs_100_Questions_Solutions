@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Socket.IO Rooms</title>
+  <script src="/socket.io/socket.io.js"></script>
+</head>
+<body>
+  <script>
+    const socket = io();
+
+    // Join a room
+    socket.emit("joinRoom", "room1");
+
+    // Listen for messages
+    socket.on("message", (msg) => {
+      console.log("Message:", msg);
+    });
+
+    // Send message to the room after 2 seconds
+    setTimeout(() => {
+      socket.emit("sendMessage", { room: "room1", message: "Hello room1!" });
+    }, 2000);
+  </script>
+</body>
+</html>
