@@ -1,0 +1,3 @@
+1. download the PM2 using this command => npm install -g pm2
+2. to start the .js file in cluster mode we use this command => pm2 start {app}.js -i max
+3. in order to start the app with zero downtime reload we use this command => pm2 reload {app}
