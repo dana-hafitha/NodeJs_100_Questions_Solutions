@@ -1,0 +1,21 @@
+1. run the command node --inspect-brk {name}.js  name can be any file name
+2. --inspect-brk enable the debugger and make it pause after the first line
+3. from the menu above open the Run and Debug tab or by using the keyboard shortcut 
+Ctrl+shift+D 
+4. create a lauch.json and make the code like this 
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "attach",
+      "name": "Attach to Node",
+      "port": 9229,
+      "restart": true,
+      "protocol": "inspector",
+      "skipFiles": ["<node_internals>/**"]
+    }
+  ]
+}
+5. set breakpoints in the file that we are inspecting and then continue running 
+the command in 1 to continue the debug process
